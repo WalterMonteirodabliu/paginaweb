@@ -1,0 +1,129 @@
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #222;
+  padding: 0;
+}
+
+/* Cabeçalho */
+.site-header {
+  background-color: #000;
+  color: #fff;
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+.club-name {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #f00;
+}
+
+.main-nav .nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #f00;
+}
+
+/* Seções principais */
+.site-main {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Hero */
+.hero-section {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.club-logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.club-description {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Seções */
+.section-title {
+  font-size: 2rem;
+  color: #d00000;
+  margin-bottom: 1rem;
+  border-left: 5px solid #d00000;
+  padding-left: 0.5rem;
+}
+
+.section-history,
+.section-titles,
+.section-stadium,
+.section-squad {
+  margin-bottom: 3rem;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.history-text,
+.stadium-text,
+.squad-text {
+  font-size: 1rem;
+  color: #444;
+}
+
+.titles-list {
+  list-style: disc inside;
+  color: #222;
+  padding-left: 1rem;
+}
+
+/* Rodapé */
+.site-footer {
+  background-color: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .nav-list {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .club-name {
+    font-size: 2rem;
+  }
+}
